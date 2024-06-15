@@ -40,4 +40,4 @@ Pointer512数据集位于CenterNet\data\pointer512，因为模型权重文件较
 
 
 
-# 
+Copyright ©️ 2022 niceNASA

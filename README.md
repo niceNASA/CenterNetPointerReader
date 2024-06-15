@@ -22,13 +22,7 @@ python demo.py multi_pose --demo ../images/ --load_model ../models/model_best.pt
 # 若需要实时展示识别结果，请将CenterNet\src\lib\detectors\multi_pose.py中的第175行反注释
 ```
 
-Pointer512数据集位于CenterNet\data\pointer512
-
-
-
-## compare
-
-该文件夹中为本文算法与基于Yolov3实现的算法的性能对比实验结果
+Pointer512数据集位于CenterNet\data\pointer512，因为模型权重文件较大无法上传，请参考CenterNet教程自行训练模型后再使用。
 
 
 

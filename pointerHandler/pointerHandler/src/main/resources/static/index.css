@@ -1,0 +1,14 @@
+header{
+    text-align: center;
+    padding: 30px;
+    font-size: 50px;
+}
+
+body{
+
+}
+
+.layui-container {
+    background-color: whitesmoke;
+    padding: 20px;
+}

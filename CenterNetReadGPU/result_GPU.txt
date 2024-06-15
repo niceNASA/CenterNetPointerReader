@@ -1,0 +1,211 @@
+Creating model...
+loaded ../models/model_best.pth, epoch 190
+5.769881581153803
+6.053546386640177
+-85.82090544577639
+0.0030875265084987042
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.812s |load 0.003s |pre 0.017s |net 0.781s |dec 0.006s |post 0.005s |merge 0.000s |
+-30.432821720105487
+-0.21784786453012847
+-89.91664566320524
+0.3368492621650459
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.109s |load 0.005s |pre 0.016s |net 0.075s |dec 0.004s |post 0.009s |merge 0.000s |
+-76.04349222820467
+-0.21750419589090766
+-89.86767875713802
+0.8457985542516824
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.106s |load 0.005s |pre 0.020s |net 0.066s |dec 0.009s |post 0.006s |merge 0.000s |
+-49.624250688745065
+-0.22829141168377567
+-89.88692218871344
+0.5509336786539062
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.100s |load 0.003s |pre 0.021s |net 0.063s |dec 0.008s |post 0.005s |merge 0.000s |
+-31.37305879036457
+6.047558575465877
+-87.1353567643004
+0.4015823848114893
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.092s |load 0.003s |pre 0.019s |net 0.061s |dec 0.004s |post 0.005s |merge 0.000s |
+-36.388822870809186
+5.253766425073017
+-86.17464313928261
+0.45546662677720934
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.091s |load 0.005s |pre 0.018s |net 0.059s |dec 0.004s |post 0.005s |merge 0.000s |
+-44.2743874612425
+6.2806672826516445
+-85.63833419768046
+0.5499956910945273
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.085s |load 0.005s |pre 0.015s |net 0.056s |dec 0.005s |post 0.004s |merge 0.000s |
+-42.87660641089539
+6.040071153814765
+-85.81535022702562
+0.5325399070556484
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.084s |load 0.004s |pre 0.014s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+-49.38414579506875
+5.74649692757976
+-86.72492196186218
+0.5961911624667753
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.090s |load 0.005s |pre 0.018s |net 0.058s |dec 0.004s |post 0.005s |merge 0.000s |
+-44.15208062304832
+5.624176250894189
+-85.50139477056209
+0.5462380791251478
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.094s |load 0.005s |pre 0.019s |net 0.058s |dec 0.007s |post 0.005s |merge 0.000s |
+-42.940048732178916
+5.677372396931995
+-85.32113808128703
+0.5342661201113588
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.095s |load 0.006s |pre 0.020s |net 0.058s |dec 0.005s |post 0.006s |merge 0.000s |
+-43.547745225620375
+5.743274268762518
+-85.7201293122217
+0.5389152115986944
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.092s |load 0.005s |pre 0.016s |net 0.061s |dec 0.004s |post 0.006s |merge 0.000s |
+-16.06707526942715
+6.613332626574858
+-86.21024490689531
+0.2443388684068328
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.098s |load 0.003s |pre 0.020s |net 0.059s |dec 0.008s |post 0.008s |merge 0.000s |
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.096s |load 0.005s |pre 0.020s |net 0.057s |dec 0.008s |post 0.006s |merge 0.000s |
+-16.05136043945145
+2.731192832405489
+-88.1285883703987
+0.20672021243297092
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.094s |load 0.006s |pre 0.022s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+-47.688021935528596
+-3.008479654029332
+86.48271374204445
+-0.49926188919790937
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.094s |load 0.004s |pre 0.021s |net 0.059s |dec 0.005s |post 0.005s |merge 0.000s |
+-44.6462788500731
+-0.23452557118315456
+88.65352392055115
+-0.49963694256807595
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.095s |load 0.006s |pre 0.016s |net 0.057s |dec 0.007s |post 0.009s |merge 0.000s |
+-52.274525820732684
+-3.6700596837458974
+-88.97706120944068
+0.5697594015462722
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.092s |load 0.006s |pre 0.017s |net 0.057s |dec 0.005s |post 0.007s |merge 0.000s |
+-44.67120869595932
+-3.976802386829138
+-89.0775451482021
+0.47819096506877123
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.092s |load 0.006s |pre 0.020s |net 0.056s |dec 0.004s |post 0.005s |merge 0.000s |
+-40.447378329636194
+-3.4169655033736954
+-88.01771332840654
+0.437707866399089
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.088s |load 0.003s |pre 0.019s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+-28.19848088932356
+2.4941940278569166
+-81.31054066332352
+0.3662403446569297
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.099s |load 0.006s |pre 0.018s |net 0.057s |dec 0.012s |post 0.005s |merge 0.000s |
+-19.239101886253742
+-4.970491108380717
+-89.34371977614259
+0.16911301135646728
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.089s |load 0.006s |pre 0.017s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+-15.397720899053922
+-1.8207388030003637
+89.25946141591575
+-0.14906623023907017
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.088s |load 0.006s |pre 0.014s |net 0.059s |dec 0.005s |post 0.004s |merge 0.000s |
+-33.26560734405508
+-1.3189763294217636
+-89.88895900993366
+0.3606936576906721
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.086s |load 0.003s |pre 0.015s |net 0.057s |dec 0.006s |post 0.005s |merge 0.000s |
+-44.90721746101801
+0.16954129383855743
+88.8877256166922
+-0.5080892840504726
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.105s |load 0.012s |pre 0.018s |net 0.058s |dec 0.008s |post 0.009s |merge 0.000s |
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.093s |load 0.006s |pre 0.015s |net 0.056s |dec 0.007s |post 0.009s |merge 0.000s |
+-35.70090463085641
+-3.245891929941465
+-86.89716102432656
+0.3879799201168774
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.090s |load 0.003s |pre 0.018s |net 0.058s |dec 0.004s |post 0.006s |merge 0.000s |
+-34.627649705221295
+-3.3714614651999955
+-86.6249490092537
+0.37543398075044054
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.089s |load 0.005s |pre 0.017s |net 0.057s |dec 0.004s |post 0.006s |merge 0.000s |
+-35.29706895361913
+-2.440466577553211
+-86.67206448258116
+0.3900745467646488
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.095s |load 0.006s |pre 0.019s |net 0.056s |dec 0.007s |post 0.007s |merge 0.000s |
+-34.81950309370895
+-1.9017027366192822
+-86.2113102999304
+0.390439492110914
+D:\workspace\pointerHandler\pointerHandler\upload/multi_pose.png
+tot 0.091s |load 0.006s |pre 0.017s |net 0.057s |dec 0.006s |post 0.005s |merge 0.000s |
+
+
+
+
+
+Creating model...
+loaded ../models/model_best.pth, epoch 190
+tot 0.812s |load 0.003s |pre 0.017s |net 0.781s |dec 0.006s |post 0.005s |merge 0.000s |
+tot 0.109s |load 0.005s |pre 0.016s |net 0.075s |dec 0.004s |post 0.009s |merge 0.000s |
+tot 0.106s |load 0.005s |pre 0.020s |net 0.066s |dec 0.009s |post 0.006s |merge 0.000s |
+tot 0.100s |load 0.003s |pre 0.021s |net 0.063s |dec 0.008s |post 0.005s |merge 0.000s |
+tot 0.092s |load 0.003s |pre 0.019s |net 0.061s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.091s |load 0.005s |pre 0.018s |net 0.059s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.085s |load 0.005s |pre 0.015s |net 0.056s |dec 0.005s |post 0.004s |merge 0.000s |
+tot 0.084s |load 0.004s |pre 0.014s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.090s |load 0.005s |pre 0.018s |net 0.058s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.094s |load 0.005s |pre 0.019s |net 0.058s |dec 0.007s |post 0.005s |merge 0.000s |
+tot 0.095s |load 0.006s |pre 0.020s |net 0.058s |dec 0.005s |post 0.006s |merge 0.000s |
+tot 0.092s |load 0.005s |pre 0.016s |net 0.061s |dec 0.004s |post 0.006s |merge 0.000s |
+tot 0.098s |load 0.003s |pre 0.020s |net 0.059s |dec 0.008s |post 0.008s |merge 0.000s |
+tot 0.096s |load 0.005s |pre 0.020s |net 0.057s |dec 0.008s |post 0.006s |merge 0.000s |
+tot 0.094s |load 0.006s |pre 0.022s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.094s |load 0.004s |pre 0.021s |net 0.059s |dec 0.005s |post 0.005s |merge 0.000s |
+tot 0.095s |load 0.006s |pre 0.016s |net 0.057s |dec 0.007s |post 0.009s |merge 0.000s |
+tot 0.092s |load 0.006s |pre 0.017s |net 0.057s |dec 0.005s |post 0.007s |merge 0.000s |
+tot 0.092s |load 0.006s |pre 0.020s |net 0.056s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.088s |load 0.003s |pre 0.019s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.099s |load 0.006s |pre 0.018s |net 0.057s |dec 0.012s |post 0.005s |merge 0.000s |
+tot 0.089s |load 0.006s |pre 0.017s |net 0.057s |dec 0.004s |post 0.005s |merge 0.000s |
+tot 0.088s |load 0.006s |pre 0.014s |net 0.059s |dec 0.005s |post 0.004s |merge 0.000s |
+tot 0.086s |load 0.003s |pre 0.015s |net 0.057s |dec 0.006s |post 0.005s |merge 0.000s |
+tot 0.105s |load 0.012s |pre 0.018s |net 0.058s |dec 0.008s |post 0.009s |merge 0.000s |
+tot 0.093s |load 0.006s |pre 0.015s |net 0.056s |dec 0.007s |post 0.009s |merge 0.000s |
+tot 0.090s |load 0.003s |pre 0.018s |net 0.058s |dec 0.004s |post 0.006s |merge 0.000s |
+tot 0.089s |load 0.005s |pre 0.017s |net 0.057s |dec 0.004s |post 0.006s |merge 0.000s |
+tot 0.095s |load 0.006s |pre 0.019s |net 0.056s |dec 0.007s |post 0.007s |merge 0.000s |
+tot 0.091s |load 0.006s |pre 0.017s |net 0.057s |dec 0.006s |post 0.005s |merge 0.000s |

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>指针识别</title>
+    <link rel="stylesheet" th:href="@{/webjars/layui/2.5.7/css/layui.css}">
+    <link rel="stylesheet" th:href="@{/index.css}">
+    <script th:src="@{/webjars/layui/2.5.7/layui.js}"></script>
+</head>
+<body>
+    <header>
+        基于CenterNet的指针仪表识别系统
+    </header>
+
+    <article>
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-md8">
+                    <!-- 这里添加一个form表单 -->
+                    <form class="layui-form" action="">
+                        <!-- 这里设置一个隐藏域，用来存放我们的图片的地址 -->
+                        <input type="hidden" id="serverImagePath" name="serverImagePath" value="">
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">仪表量程</label>
+                            <div class="layui-input-block">
+<!--                                <textarea name="imageDescribe" placeholder="请输入该图片的描述" class="layui-textarea"></textarea>-->
+                                <input type="numbers" name="startrange" placeholder="起始刻度" class="layui-input">
+                                <input type="numbers" name="endrange" placeholder="终止刻度" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">上传按钮</label>
+                            <div class="layui-input-block">
+                                <button type="button" class="layui-btn" id="uploadImg">
+                                    <i class="layui-icon">&#xe67c;</i>上传图片
+                                </button>
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">图片预览</label>
+                            <div class="layui-input-block">
+                                <img id="image" style="height: 256px; width: 256px">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">仪表示数</label>
+                            <div class="layui-input-block">
+                                <div class="layui-progress layui-progress-big" lay-filter="demo" lay-showPercent="true">
+                                    <div class="layui-progress-bar" lay-percent="0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="upload">提交识别</button>
+<!--                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="layui-col-md4">
+                    <div id="meter" style="width: 400px; height: 400px"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<script th:src="@{echarts.js}"></script>
+<script>
+    layui.config({
+        base: '../static/'
+    }).use(['echarts','element','layer'],function (){
+        var element = layui.element;
+        var $ = layui.jquery;
+        var echarts = layui.echarts;
+    });
+
+    let myChart = layui.echarts.init(document.getElementById('meter'));
+
+    let option = {
+        series: [
+            {
+                type: 'gauge',
+                progress: {
+                    show: true,
+                    width: 18
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 18
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    length: 15,
+                    lineStyle: {
+                        width: 2,
+                        color: '#999'
+                    }
+                },
+                axisLabel: {
+                    distance: 25,
+                    color: '#999',
+                    fontSize: 20
+                },
+                anchor: {
+                    show: true,
+                    showAbove: true,
+                    size: 25,
+                    itemStyle: {
+                        borderWidth: 10
+                    }
+                },
+                title: {
+                    show: false
+                },
+                detail: {
+                    valueAnimation: true,
+                    fontSize: 80,
+                    offsetCenter: ['-30%', '30%']
+                },
+                data: [
+                    {
+                        value: 0
+                    }
+                ],
+                radius: "120%",
+                center: ["80%", "60%"],
+                splitNumber: 5,
+                startAngle: 180,
+                endAngle: 90,
+                min: 0,
+                max: 100
+            }
+        ]
+    };
+
+    myChart.setOption(option);
+
+    layui.use('upload', function(){
+        let upload = layui.upload;
+        let $ = layui.$;
+        //执行实例
+        let uploadInst = upload.render({
+            elem: '#uploadImg' //绑定元素
+            ,url: '/upload/image' //上传接口
+            ,done: function(res){
+                if (res.code == 1){
+                    layer.msg(res.msg);
+                    //获得图片的路径
+                    let src = res.data.src;
+                    //将图片进行回显
+                    $("#image").attr("src",src);
+                    //将图片的地址赋值给 form的隐藏域
+                    $("#serverImagePath").attr("value",src);
+                }else {
+                    //失败
+                    layer.msg(res.msg);
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+    });
+
+
+    layui.use('form', function(){
+        let form = layui.form;
+        let $ = layui.$;
+        //监听表单的提交
+        form.on('submit(upload)', function(data){
+            $.ajax({
+                url: "/upload/process",
+                method: "post",
+                data: data.field,
+                dataType: "JSON",
+                success: function (res){
+                    if (res.code == 1){
+                        layer.msg("识别成功");
+                        //获得图片的路径
+                        let src = res.data.src;
+                        //将图片进行回显
+                        $("#image").attr("src",src);
+
+                        console.log(res.msg);
+                        // 修改进度条示数
+                        let element = layui.element;
+                        element.progress('demo', res.msg);
+
+                        // 修改Echarts仪表盘
+                        let temp = res.msg.slice(0,2);
+                        let per = parseInt(temp);
+                        let startrange = res.startrange;
+                        let endrange = res.endrange;
+                        myChart.setOption({
+                            series: [{
+                                data: [{
+                                    value: parseInt((per/100)*endrange + startrange)
+                                }],
+                                min: startrange,
+                                max: endrange,
+                            }]
+                        })
+                    }else {
+                        //失败
+                        layer.msg("识别失败");
+                    }
+                }
+            })
+            return false;
+        });
+    });
+
+    //注意进度条依赖 element 模块，否则无法进行正常渲染和功能性操作
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+
+
+
+</script>
+</html>

@@ -28,7 +28,7 @@ Pointer512数据集位于CenterNet\data\pointer512，因为模型权重文件较
 
 ## pointerHandler
 
-该文件夹中为基于SpringBoot和LayUI的演示图像界面程序
+该文件夹中为基于SpringBoot和LayUI的演示图形界面程序
 
 要运行该程序请使用IDEA打开该文件夹，然后修改pointerHandler\pointerHandler\src\main\java\com\pointerhandler\controller\UploadController.java中的绝对路径为运行环境中demo.py的相应位置
 

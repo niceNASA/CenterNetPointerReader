@@ -2,8 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-MODEL_PATH = '/Users/xuhao/Downloads/ExtremeNet_500000.pkl'
-OUT_PATH = '/Users/xuhao/Downloads/ExtremeNet_500000.pth'
+MODEL_PATH = ''
+OUT_PATH = ''
 
 import torch
 state_dict = torch.load(MODEL_PATH)
